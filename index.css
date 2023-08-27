@@ -1,0 +1,266 @@
+*{
+    font-family: sans-serif;
+}
+
+html, body{
+    height: 100%;
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+
+    background-color: rebeccapurple;
+}
+
+svg{
+    fill :aliceblue;
+
+    min-width: 24px;
+}
+
+.sustube{
+    height: 100%;
+    width: 100%;
+    background-color: midnightblue;
+
+    display: grid;
+    grid-template-columns: 100px 95%;
+    grid-template-rows: 7% 70px 88%;
+
+    overflow: hidden;
+}
+
+.searchNav{
+    background-color: #000000;
+    grid-column: 1/-1;
+    grid-row: 1/1;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center; 
+}
+
+.searchNav > div {
+    margin: 10px;
+}
+
+.searchBar{
+    align-items: center;
+    flex: 1;
+
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.searchBar > div {
+    margin: 5px;
+}
+
+.user{
+    min-width: 30px;
+    min-height: 30px;
+    background-color: blueviolet;
+
+    border-radius: 50px;
+}
+
+.homeIcon{
+    max-height: 100px;
+    max-width: 100px;
+
+    min-width: 100px;
+}
+
+.homeIcon > .homeIconSVG {
+    min-height: 100%;
+    min-width: 100%;
+}
+
+
+.searchBox{
+    min-width: 500px;
+    min-height: 30px;
+
+    width: 50%;
+    height: 100%;
+
+    background-color: hsl(0, 0%, 18.82%);
+
+    display: grid;
+    grid-template-columns: 1fr 50px;
+
+    border-radius: 50px;
+
+    border: 2px solid hsl(0, 0%, 18.82%);
+}
+
+.searchText{
+    border-radius: 50px 0px 0px 50px;
+    background-color: #000000;
+    color: aliceblue;
+
+    vertical-align: middle;
+
+    display: flex;
+    flex-direction: row;
+}
+
+.searchInput{
+    align-items: center;
+    background-color: #000000;
+
+    color: aliceblue;
+    
+    padding-left: 10px;
+    width: 100%;
+    border-radius: 50px 0px 0px 50px;
+    border: 0px;
+}
+
+.searchButton{
+    max-height: 30px;
+    max-width: 30px;
+
+    border-left: 2px solid hsl(0, 0%, 18.82%);
+}
+
+.searchButton > svg{
+    margin-left: 10px;
+}
+
+.library-nav{
+    background-color: #000000;
+    grid-column: 1/1;
+    grid-row: 2/-1;
+
+    display: flex;
+    flex-direction: column;
+    /* grid-template-columns: 1fr; */
+    overflow: scroll;
+}
+
+.library{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    margin: 10px;
+
+    margin-top: 30px;
+
+    color: whitesmoke;
+
+    /* background-color: darkgoldenrod; */
+}
+
+.library > svg{
+    max-width: 34px;
+    max-height: 34px;
+}
+
+.library > div {
+    margin-top: 5px;
+}
+
+.suggestionNav{
+    background-color: #000000;
+    grid-column: 2/-1;
+    grid-row: 2/2;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    overflow: scroll;
+    flex-wrap: wrap;
+}
+
+.suggestionNav::-webkit-scrollbar {
+    width: 0px;
+    background: transparent; /* make scrollbar transparent */
+}
+
+.suggestion{
+    /* min-width: 100px; */
+    min-height: 30px;
+    
+    margin: 15px;
+
+    border-radius: 10px;
+
+    background-color: #383535;
+
+    color: aliceblue;
+
+    resize: none;
+
+    text-align: center;
+    text-justify: auto;
+
+    padding: 10px;
+    padding-bottom: 0px;
+}
+
+.videoBox{
+    background-color: #000000;
+    /* grid-column: 2/-1;
+    grid-row: 3/-1; */
+
+    display: flex;
+    flex-direction: row;
+    /* grid-template-columns: 1fr 1fr 1fr; */
+
+    flex-wrap: wrap;
+
+    align-items: center;
+
+    overflow: scroll;
+}
+
+.video{
+
+    font-family: sans-serif;
+    /* width: 90%; */
+    /* height: 400px; */
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr ;
+    
+    color: white;
+
+    margin: 2%;
+    margin-top: 1%;
+
+    background-color: black;
+}
+
+.video > img {
+    width: 350px;
+    border-radius: 10px;
+}
+
+.videoTitle{
+    display: grid;
+    grid-template-columns: 50px 1fr;
+
+    margin-top: 10px;
+}
+
+.videoText{
+    font-size: 20px;
+    font-weight: 800;
+}
+
+.videoIcon{
+    background-color: aquamarine;
+    width: 40px;
+    height: 40px;
+    
+    border-radius: 50px;
+}
+
+.videoDetails{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+}
